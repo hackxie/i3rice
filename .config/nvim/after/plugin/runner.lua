@@ -4,7 +4,7 @@ require('code_runner').setup({
   -- put here the commands by filetype
   filetype = {
 		python = "python3 -u",
-        cpp = "cd $dir && g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        cpp = "cd $dir && clang++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
         javascript = "node",
 		typescript = "deno run",
 		rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt"
