@@ -25,15 +25,15 @@ return require('packer').startup(function(use)
   end
   }
 
-  use "lukas-reineke/indent-blankline.nvim"
-  use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
-  use('mbbill/undotree')
-  use('tpope/vim-fugitive')
-  use('bluz71/vim-nightfly-colors')
-  use('norcalli/nvim-colorizer.lua')
-  use('nvim-tree/nvim-web-devicons')
-  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+  use ('lukas-reineke/indent-blankline.nvim')
+  use ({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
+  use ('mbbill/undotree')
+  use ('tpope/vim-fugitive')
+  use ('bluz71/vim-nightfly-colors')
+  use ('norcalli/nvim-colorizer.lua')
+  use ('nvim-tree/nvim-web-devicons')
+  use ({'romgrk/barbar.nvim', wants = 'nvim-web-devicons'})
+  use ({'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'})
   use ('CRAG666/code_runner.nvim')
 
   use {
